@@ -1,0 +1,68 @@
+#-------------------------------------
+#Curso de Paradigmas de Programación
+#Semestre 2025-1
+#-------------------------------------
+
+#------------------------------------
+#Uso de la terminal (UNIX)
+#------------------------------------
+
+ls           -> Listado de archivos en el direcrorio
+cd    xxx    -> Cambio de  directorio
+		si 
+			xxx= Null  Te lleva a home
+			xxx= ..   Te regresa al direcrtorio anterior
+			xxx= ../.. Te regresa dos direcrtorios anteriores 	
+mkdir xxx    -> Crea un drectorio xxx
+clear        -> Limpia la terminal
+pwd          -> Muestra la direccion en la que se encuentra
+cp x y       -> Copia el archivo  x  al directorio  y
+mv x y       -> Mueve el archiivo  x  al directorio y   
+rm    xxx    -> Borra el archivo xxx 
+rm -r xxx    -> Remueve el directorio xxx completamente 
+rmdir        -> Remueve los direcrios vacios
+ps -ef       -> Muestra los procesos que se esten ejecutando
+kill -9 xxx  -> Detiene el proceso xxx
+man     xxx  -> Muestra el manual del comando xxx 
+
+#------------------------------------
+#Instalar aplicacionnes 
+#------------------------------------
+sudi apt-get update        -> Muestra la lista de programas a renovar
+sudo apt-get uograde       -> Baja los programas necesarios a actualizar
+suudo apt-get isntall xxx  -> Instala la aplicacion xxx
+
+#-------------------------------------
+#Instruciones de vi
+#Requiere de un comando para actuar
+#-------------------------------------
+R       -> Escribir y remplazar lo antes escrito
+i	-> Escribe desde la posicion atras a la anterior y desplaza lo antes escrito
+a	-> Escribe desde la posicion adelante a la actual y desplaza lo antes escrito
+o	-> Abre un reglon abajo
+O	-> Abre un renglon arriba
+dd	-> Borra el renglon
+D	-> Borra todo lo de adelante 
+/xxx	-> Busca xxx
+		Si hay mas de uno
+			n -> siguiente elemento xxx
+			N -> Anterior elemento  xxx
+x	-> Borra la posicion actual
+:x	-> Manda a la linea x
+x=$	-> Manda a la ultima linea
+
+(n)(instruccion)	-> Repite la instruccion  xxx n veces 
+:w			-> Graba el archivo
+:wq			-> Graba y sale del archivo
+:q! 			-> Sale sin guardar el archivo
+
+#------------------------------------  
+#Instruciones de git
+#------------------------------------
+
+git init
+giit config --global user.name "Franciso López"
+git config --global user.email "youremail@gmaiil.com"
+git add
+giir push
+git clone https://...
